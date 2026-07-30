@@ -1,5 +1,11 @@
 <h1 align="center">Hi 👋, I'm Syed Massi Maskoor</h1>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/massi15-bit/massi15-bit/main/dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/massi15-bit/massi15-bit/main/light.svg">
+  <img alt="Syed Massi Maskoor" src="https://raw.githubusercontent.com/massi15-bit/massi15-bit/main/light.svg">
+</picture>
+
 <h3 align="center">
 Robotics Software Engineer | AI & Computer Vision Enthusiast | C++ & Python Developer
 </h3>
