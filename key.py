@@ -5,7 +5,7 @@ import numpy as np
 from pynput.keyboard import Controller, Key
 from pynput.mouse import Controller as MouseController, Button as MouseButton
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 cap.set(3, 1280)
 cap.set(4, 720)
 
