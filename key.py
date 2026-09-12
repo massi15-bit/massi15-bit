@@ -6,6 +6,8 @@ from pynput.keyboard import Controller, Key
 from pynput.mouse import Controller as MouseController, Button as MouseButton
 
 cap = cv2.VideoCapture(0)
+if not cap.isOpened():
+    raise SystemExit("Unable to open webcam. Check that your camera is connected and not used by another application.")
 cap.set(3, 1280)
 cap.set(4, 720)
 
