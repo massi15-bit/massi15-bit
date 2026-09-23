@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100b19">
+  <meta name="description" content="A birthday surprise for Sarah Afreen, five years in the making.">
+  <title>For Sarah Afreen | Five Years of Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-glow page-glow-one" aria-hidden="true"></div>
+  <div class="page-glow page-glow-two" aria-hidden="true"></div>
+  <div id="particle-field" class="particle-field" aria-hidden="true"></div>
+
+  <div id="opening-screen" class="opening-screen">
+    <div class="opening-stars" aria-hidden="true"></div>
+    <div class="opening-content">
+      <p class="eyebrow">A little note from your favourite person</p>
+      <h1>Hey Sarah Afreen <span>❤</span></h1>
+      <p class="opening-subtitle">I made something special for you...</p>
+      <p class="opening-dedication">five years, one favourite person</p>
+      <button id="open-surprise" class="button button-primary" type="button">✨ Open Your Surprise</button>
+      <p class="opening-footnote">Take your time. This one is ours.</p>
+    </div>
+    <div class="floating-hearts" aria-hidden="true">
+      <span>❤</span><span>♡</span><span>❤</span><span>♡</span><span>❤</span>
+    </div>
+  </div>
+
+  <div id="site-content" class="site-content" aria-hidden="true">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Go to home">S<span>❤</span>A</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#memories">Memories</a>
+        <a href="#letter">Letter</a>
+        <a href="#surprise">Surprise</a>
+      </nav>
+      <button id="music-toggle" class="music-toggle" type="button" aria-label="Play Tum Ho Toh" aria-pressed="false">
+        <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="music-label">Tum Ho Toh</span>
+      </button>
+      <!-- Add your legally obtained audio-only file at audio/tum-ho-toh.mp3. -->
+      <audio id="background-music" src="audio/tum-ho-toh.mp3" loop preload="none"></audio>
+    </header>
+
+    <main>
+      <section id="home" class="hero section-shell">
+        <div class="hero-content reveal">
+          <p class="eyebrow">September 24 · a day worth celebrating</p>
+          <h2>Happy Birthday,<br><em>Sarah Afreen</em> <span>❤🎂</span></h2>
+          <p class="hero-copy">Before you scroll, I just want you to know that this isn't just a website... it's a little piece of our 5 years together.</p>
+          <p class="hero-signature">Still choosing you, every day.</p>
+          <a class="scroll-cue" href="#story"><span class="scroll-line"></span>Scroll down <b>↓</b></a>
+        </div>
+        <div class="hero-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+      </section>
+
+      <section id="story" class="story section-shell section-space">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Every chapter still feels like us</p>
+          <h2>5 Years <em>of Us</em> <span>❤</span></h2>
+          <p>Five years of becoming best friends, choosing each other, and collecting the kind of memories that never really leave.</p>
+        </div>
+        <div id="timeline" class="timeline">
+          <!-- These memories are easy to edit in the CONFIG object at the top of script.js. -->
+        </div>
+      </section>
+
+      <section id="memories" class="memories section-shell section-space">
+        <div class="section-heading split-heading reveal">
+          <div>
+            <p class="eyebrow">Little pieces of forever</p>
+            <h2>Our <em>Memories</em> <span>❤</span></h2>
+          </div>
+          <p>Eight frames waiting for the moments only we can name.</p>
+        </div>
+        <div id="memory-gallery" class="memory-gallery">
+          <!-- Replace each images/photoX.jpg path with one of your own photos. -->
+        </div>
+      </section>
+
+      <section id="nicknames" class="nicknames section-shell section-space">
+        <div class="nickname-wrap reveal">
+          <p class="eyebrow">The names that only I get to use</p>
+          <div id="nickname-list" class="nickname-list"></div>
+          <p class="nickname-closing">Different names... same person.<br><strong>My favourite person. ❤</strong></p>
+        </div>
+      </section>
+
+      <section id="letter" class="letter-section section-shell section-space">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Unedited, from me to you</p>
+          <h2>A Letter <em>for You</em> <span>💌</span></h2>
+        </div>
+        <article id="love-letter" class="love-letter reveal">
+          <div class="letter-mark">S <span>❤</span> A</div>
+          <div id="letter-content"></div>
+          <div class="letter-signoff">Always yours,<br><strong>your favourite person</strong></div>
+        </article>
+      </section>
+
+      <section id="reasons" class="reasons section-shell section-space">
+        <div class="section-heading reveal">
+          <p class="eyebrow">I could keep going</p>
+          <h2>Things I Love <em>About You</em> <span>❤</span></h2>
+          <p>Tap a card. I hid a little extra thought behind each one.</p>
+        </div>
+        <div id="reasons-grid" class="reasons-grid"></div>
+      </section>
+
+      <section id="surprise" class="surprise section-shell section-space">
+        <div class="surprise-intro reveal">
+          <p class="eyebrow">The last page is not really the last page</p>
+          <h2>Wait... there's one more thing <span>👀</span></h2>
+          <button id="gift-button" class="button button-primary" type="button">🎁 Open It</button>
+        </div>
+        <div id="gift-stage" class="gift-stage" aria-live="polite">
+          <div class="gift-box" aria-hidden="true">
+            <div class="gift-lid"></div>
+            <div class="gift-body"></div>
+            <div class="gift-ribbon vertical"></div>
+            <div class="gift-ribbon horizontal"></div>
+          </div>
+          <div id="confetti" class="confetti" aria-hidden="true"></div>
+          <div id="final-message" class="final-message">
+            <p id="final-message-text"></p>
+            <div class="final-signoff">With all my heart, <span>❤</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>S ❤ A</span><p>Made with five years of memories, and a lot of love.</p></footer>
+  </div>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Memory viewer" aria-hidden="true">
+    <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
+    <div class="lightbox-frame">
+      <img id="lightbox-image" src="" alt="">
+      <div id="lightbox-fallback" class="lightbox-fallback" aria-hidden="true"><span>Memory</span><b></b></div>
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
